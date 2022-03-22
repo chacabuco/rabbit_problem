@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 
-static double pairs (double *cache,int year) {
+static double pairs (double cache[],int year) {
 	int init_values[] = {1,1,1,2,3,2};
 	// Using memoization in order to make it faster.
 	// https://en.wikipedia.org/wiki/Memoization
@@ -29,7 +29,7 @@ static double pairs (double *cache,int year) {
   return cache[year];
 }
 
-#define SHOW(year) printf ("Year %3d: %.0f\n", year, pairs(&global_cache, year));
+#define SHOW(year) printf ("Year %3d: %.0f\n", year, pairs(global_cache, year));
 #define SIZE 151
 
 int main (void) {
