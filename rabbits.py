@@ -5,5 +5,5 @@ def f(x):
     if x < 6:
         return a[x]
     else:
-        return f(x-1) = f(x-3) - f(x-5)
+        return f(x-1) + f(x-3) - f(x-5)
 
