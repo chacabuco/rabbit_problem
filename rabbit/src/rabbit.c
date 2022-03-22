@@ -13,6 +13,8 @@
 
 static double pairs (double *cache,int year) {
 	int init_values[] = {1,1,1,2,3,2};
+	// Using memoization in order to make it faster.
+	// https://en.wikipedia.org/wiki/Memoization
 	if (5 < year)
 	{
 		if (-1 == cache[year])
